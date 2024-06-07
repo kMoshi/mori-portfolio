@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: $font-jp-serif;
+    font-family: $font-jp-sans;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -71,6 +71,7 @@ a {
         display: flex;
         margin-left: #{(220 / 10)}rem;
         margin-top: #{(20 / 10)}rem;
+        font-family: $font-jp-serif;
         li {
             display: inline-block;
             list-style: none;

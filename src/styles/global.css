@@ -292,7 +292,7 @@ html {
 }
 
 body {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -354,6 +354,7 @@ a {
   display: flex;
   margin-left: 22rem;
   margin-top: 2rem;
+  font-family: "Noto Serif JP", serif;
 }
 .header__gnav li {
   display: inline-block;

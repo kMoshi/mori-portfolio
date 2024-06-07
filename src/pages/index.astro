@@ -1,7 +1,8 @@
 ---
-import "../styles/global.css";
-import "../styles/reset.css";
-import "../styles/swiper.min.css";
+import "/src/styles/global.css";
+import "/src/styles/reset.css";
+import "/src/styles/swiper.min.css";
+import '@fontsource/noto-sans-jp';
 const pageTitle = "UrbanBlues";
 ---
 
@@ -38,25 +39,9 @@ const pageTitle = "UrbanBlues";
 
     <div class="block mv">
       <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+      
+      <img src="../public/images/photo-1603722796411-de70d5b992e3.jpg" alt="" />
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
       <div class="slide">
         <div class="contents">
           MONTHLY 202405 A HOLE ―FOREST―
@@ -140,13 +125,9 @@ const pageTitle = "UrbanBlues";
         },
       });
     </script>
-
-    <script src="../scripts/swiper-bundle.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
-    ></script>
+    <script src="/src/scripts/swiper-bundle.min.js"></script>
+    <script src="/src/scripts/gsap.js"></script>
+    <script src="/src/scripts/lenis.min.js"></script>
+    
   </body>
 </html>
