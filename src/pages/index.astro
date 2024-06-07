@@ -112,7 +112,7 @@ const pageTitle = "UrbanBlues";
       <div class="inner"></div>
     </footer>
 
-    <script>
+    <script is:inline>
       const lenis = new Lenis();
 
       function raf(time) {
@@ -143,12 +143,12 @@ const pageTitle = "UrbanBlues";
         },
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    <script src="/src/scripts/swiper-bundle.min.js"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
     ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
-    ></script> -->
+    <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
   </body>
 </html>
