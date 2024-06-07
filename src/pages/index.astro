@@ -11,7 +11,10 @@ const pageTitle = "UrbanBlues";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>{pageTitle}</title>
   </head>
   <body>
@@ -43,9 +46,24 @@ const pageTitle = "UrbanBlues";
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="https://portfolio-mori.netlify.app/images/test.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://portfolio-mori.netlify.app/images/test.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://portfolio-mori.netlify.app/images/test.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <img
+              src="https://portfolio-mori.netlify.app/images/test.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://portfolio-mori.netlify.app/images/test.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://portfolio-mori.netlify.app/images/test.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -125,8 +143,7 @@ const pageTitle = "UrbanBlues";
         },
       });
     </script>
-
-    <script src="../scripts/swiper-bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
