@@ -1,0 +1,41 @@
+// WIDTH ---------------------------------------------
+$break-point: 767px;
+
+// COLOR ---------------------------------------------
+$color-black: #333;
+$color-white: #f8f8f8;
+$color-red: #bd341d;
+$color-orange: #eb6100;
+$color-blue: #008fd0;
+//$color-beige: #f5f5f1;
+$color-beige: #eceae4;
+$color-light-gray: #f5f5f5;
+$color-light-gray2: #eee;
+$color-dark-gray: #434343;
+//$color-dark-gray2: #666;
+$color-dark-gray2: #555;
+$color-dark-gray3: #aaa;
+$color-gray: #ccc;
+$color-placeholder: #ccc;
+
+$default-color: $color-white;
+$link-color: $color-blue;
+
+// FONT ---------------------------------------------
+$font-jp-sans: 'Noto Sans JP', sans-serif;
+/*
+regular 400
+medium 500
+*/
+
+$font-jp-serif: 'Noto Serif JP', serif;
+/*
+regular 400
+medium 500
+semi-bold 600
+*/
+
+// ICON ---------------------------------------------
+$link-arw: "/assets/img/common/icon_link_arw.svg";
+$slider-arw: "/assets/img/common/icon_slider_arw.svg";
+$list-arw: "/assets/img/common/icon_list_arw.svg";
