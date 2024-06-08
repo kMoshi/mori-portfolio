@@ -79,13 +79,13 @@ a {
             &:last-child {
                 padding-right: 0;
             }
-            a{
+            a {
                 display: block;
-                padding: .4rem 1rem;
+                padding: 0.4rem 1rem;
                 border-radius: 12px;
-                &:hover{
-                    opacity: .8;
-                    transition: .3s;
+                &:hover {
+                    opacity: 0.8;
+                    transition: 0.3s;
                     background-color: rgb(211, 211, 211);
                 }
             }
@@ -94,6 +94,8 @@ a {
     &__subnav {
         position: absolute;
         display: flex;
+        width: 240px;
+        justify-content: right;
         margin-top: #{(24 / 10)}rem;
         right: 0;
         li {
@@ -101,7 +103,14 @@ a {
             list-style: none;
             padding-left: #{(20 / 10)}rem;
             &:last-child {
-                padding-left: 0;
+                // padding-left: 0;
+            }
+        }
+        img {
+            width: 24px;
+            &:hover {
+                opacity: 0.8;
+                transition: 0.3s;
             }
         }
     }
@@ -109,51 +118,155 @@ a {
 
 // top-contents
 .block {
+    padding-bottom: #{(80 / 10)}rem;
     &.mv {
-        .swiper {
+        width: 100%;
+        height: 640px;
+        margin: 0 auto;
+        padding-bottom: #{(80 / 10)}rem;
+        // position: relative;
+        .txt {
             width: 100%;
-            height: 500px;
+            position: absolute;
+            z-index: 200;
+            top: calc(100% / 3);
+            .contents {
+                // width: 1024px;
+                margin: 0 auto;
+                position: absolute;
+                left: 2vw;
+                font-family: $font-jp-serif;
+                span {
+                    display: block;
+                }
+                .month {
+                    font-size: #{(20 / 10)}rem;
+                    display: block;
+                }
+                .tl {
+                    // position: absolute;
+                    margin-top: #{(-10 / 10)}rem;
+                    margin-left: #{(-4 / 10)}rem;
+                    mix-blend-mode: overlay; /* オーバーレイを指定 */
+                    color: $color-black;
+                    font-size: #{(64 / 10)}rem;
+                    display: block;
+                    mix-blend-mode: overlay; /* オーバーレイを指定 */
+                }
+                .txt {
+                    padding-top: #{(40 / 10)}rem;;
+                    font-size: #{(20 / 10)}rem;
+                }
+                button {
+                    display: block;
+                    margin-top: #{(40 / 10)}rem;;
+                    border-radius: 9999px;
+                    border: 1px solid $color-black;
+                    font-family: $font-jp-serif;
+                    padding: 0.4rem 4rem;
+                }
+            }
+        }
+        .swiper {
+            position: absolute;
+            max-width: 1041px;
+            width: 80%;
+            height: auto;
+            // width: calc(70%);
+            // height: 400px;
+            // height: auto;
+            right: 0;
+            z-index: 100;
         }
     }
-    &.news {
-        
+    &.feature {
     }
-    &.items {
-        width: 100%;
-        .inner{
+    &.news {
+        .inner {
             width: 1024px;
             margin: 0 auto;
             display: flex;
-            .item{
-                text-align: center;
-                img{
-                        width: 240px;
-                        height: 320px;
-                        object-fit: cover;
-                        position: relative;
+            justify-content: space-between;
+            .news__head {
+                width: 284px;
+                border-right: 1px solid $color-black;
+                .tl {
+                    font-family: $font-jp-serif;
+                    font-size: 1.5rem;
                 }
-                span{
-
-                }
-                button{
+                button {
                     display: block;
-                    border-radius: 4px;
-                    border: 1px solid red;
+                    border-radius: 9999px;
+                    border: 1px solid $color-black;
+                    font-family: $font-jp-serif;
+                    padding: 0.4rem 4rem;
+                }
+            }
+            .nesw__list {
+                width: calc(1024px - 284px);
+                display: block;
+                border-left: 1px solid $color-black;
+            }
+            li {
+                .date {
+                    padding-left: 2rem;
+                }
+                .txt {
+                }
+            }
+        }
+    }
+    &.items {
+        width: 100%;
+        border-bottom: 1px solid $color-black;
+        border-top: 1px solid $color-black;
+        h2 {
+            font-family: $font-jp-serif;
+            text-align: center;
+        }
+        .inner {
+            width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 240px;
+                    height: 320px;
+                    object-fit: cover;
+                    position: relative;
+                }
+                span {
+                    text-align: center;
+                }
+                button {
+                    display: block;
+                    border-radius: 9999px;
+                    border: 1px solid $color-black;
+                    padding: 0.4rem 4rem;
+                    font-family: $font-jp-serif;
                 }
             }
         }
     }
     &.sns {
-        .inner{
+        h2 {
+            width: 100%;
+            img {
+                width: 283px;
+                display: block;
+                text-align: center;
+            }
+        }
+        .inner {
             display: flex;
         }
     }
     &.store {
-        
     }
 }
-
-
 
 // footer
 .footer {
@@ -161,8 +274,6 @@ a {
         color: red;
     }
 }
-
-
 
 .circle {
     width: 240px;

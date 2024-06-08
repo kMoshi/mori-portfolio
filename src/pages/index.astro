@@ -5,179 +5,196 @@ const pageTitle = "UrbanBlues";
 ---
 
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__logo"><h1>{pageTitle}</h1></div>
-        <div class="header__gnav">
-          <ul>
-            <li><a href="#">ALL</a></li>
-            <li><a href="#">WOMEN</a></li>
-            <li><a href="#">MEN</a></li>
-            <li><a href="#">KIDS</a></li>
-          </ul>
-        </div>
-        <div class="header__subnav">
-          <ul>
-            <li><a href="#">search</a></li>
-            <li><a href="#">recommend</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">mypage</a></li>
-          </ul>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>{pageTitle}</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <h1>{pageTitle}</h1>
+      </div>
+      <div class="header__gnav">
+        <ul>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">WOMEN</a></li>
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">KIDS</a></li>
+        </ul>
+      </div>
+      <div class="header__subnav">
+        <ul>
+          <li><a href="#"><img src="/public/images/img_header_ico_search.svg" alt=""></a></li>
+          <li><a href="#"><img src="/public/images/img_header_ico_heart.svg" alt=""></a></li>
+          <li><a href="#"><img src="/public/images/img_header_ico_bag.svg" alt=""></a></li>
+          <li><a href="#"><img src="/public/images/img_header_ico_person.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="block mv">
+    <div class="mv__slide">
+      <div class="txt">
+        <div class="contents">
+          <span class="month">MONTHLY</span>
+          <span class="tl">202405 A HOLE ―FOREST―</span>
+          <span class="txt">新しいデニムコレクションを完全受注生産で お届けします。</span>
+          <button class="btn__view">MORE</button>
         </div>
       </div>
-    </header>
-
-    <div class="block mv">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img
-              src="https://portfolio-mori.netlify.app/images/test.jpg"
-              alt=""
-            />
+            <img src="https://portfolio-mori.netlify.app/images/" alt="" />
           </div>
           <div class="swiper-slide">
-            <img
-              src="https://portfolio-mori.netlify.app/images/test.jpg"
-              alt=""
-            />
+            <img src="https://portfolio-mori.netlify.app/images/test.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img
-              src="https://portfolio-mori.netlify.app/images/test.jpg"
-              alt=""
-            />
+            <img src="https://portfolio-mori.netlify.app/images/test.jpg" alt="" />
           </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
-      <div class="slide">
-        <div class="contents">
-          MONTHLY 202405 A HOLE ―FOREST―
-          新しいデニムコレクションを完全受注生産で お届けします。
-          <!-- Slider main container -->
 
-          <button class="btn__view">MORE</button>
-        </div>
+    </div>
+  </div>
+
+  <div class="block slide"></div>
+
+  <div class="block news">
+    <div class="inner">
+      <div class="news__head">
+        <div class="tl">NEWS</div>
+        <button class="view-more">MORE</button>
+      </div>
+      <div class="news__list">
+        <ul>
+          <li><span class="date">2024年5月31日</span><span class="txt">夏にぴったりの新作登場！鮮やかなブルーが目を引くコレクション 今年の夏、…</span></li>
+          <li><span class="date">2024年5月31日</span><span class="txt">エコフレンドリーなファッション：環境に優しい素材を使った最新ライン 環境…</span>
+          </li>
+          <li><span class="date">2024年5月31日</span><span class="txt">注目のスタイリング提案：ブルーを基調にしたコーディネート術 スタイリング…</span>
+          </li>
+          <li><span class="date">2024年5月31日</span><span class="txt">セール情報：人気アイテムが最大50%オフ！人気アイテムが期間限定で最大50…</span>
+          </li>
+          <li><span class="date">2024年5月31日</span><span class="txt">お客様の声：Urban Bluesの愛用者インタビュー Urban
+              Bluesを愛用している…</span></li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div class="block slide"></div>
-
-    <div class="block news">
-      <div class="inner">
-        <div class="tl">NEWS MORE</div>
+  <div class="block items">
+    <h2>ALL ITEMS</h2>
+    <div class="inner">
+      <div class="item">
+        <img src="/public/images/all_img01.jpg" alt="" />
+        <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
+        <button class="view-more">BUY NOW</button>
+      </div>
+      <div class="item">
+        <img src="/public/images/all_img02.jpg" alt="" />
+        <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
+        <button class="view-more">BUY NOW</button>
+      </div>
+      <div class="item">
+        <img src="/public/images/all_img03.jpg" alt="" />
+        <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
+        <button class="view-more">BUY NOW</button>
+      </div>
+      <div class="item">
+        <img src="/public/images/all_img04.jpg" alt="" />
+        <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
+        <button class="view-more">BUY NOW</button>
       </div>
     </div>
+  </div>
 
-    <div class="block items">
-      <div class="inner">
-        <div class="item">
-          <img src="/public/images/all_img01.jpg" alt="" />
-          <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
-          <button class="view-more">MORE</button>
-        </div>
-        <div class="item">
-          <img src="/public/images/all_img02.jpg" alt="" />
-          <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
-          <button class="view-more">MORE</button>
-        </div>
-        <div class="item">
-          <img src="/public/images/all_img03.jpg" alt="" />
-          <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
-          <button class="view-more">MORE</button>
-        </div>
-        <div class="item">
-          <img src="/public/images/all_img04.jpg" alt="" />
-          <span>202405 HOLE（DEEPGREEN） ¥39,600 (tax in)</span>
-          <button class="view-more">MORE</button>
-        </div>
-      </div>
+  <div class="block sns">
+    <h2><img src="/public/images/img_snapLogo.png" alt=""></h2>
+    <div class="inner">
+      <img class="circle" src="/public/images/img_snap01.jpg" alt="" />
+      <img class="circle" src="/public/images/img_snap02.jpg" alt="" />
+      <img class="circle" src="/public/images/img_snap03.jpg" alt="" />
+      <img class="circle" src="/public/images/img_snap04.jpg" alt="" />
+      <img class="circle" src="/public/images/img_snap05.jpg" alt="" />
+      <img class="circle" src="/public/images/img_snap06.jpg" alt="" />
     </div>
+    <span class="txt">あなたのデニムスタイルスタイル👖を大募集！！Instagramで 「#UrbanBlues」
+      のハッシュタグをつけて投稿してください🙏🏻スタッフがセレクトして、掲載いたします！️</span>
+  </div>
 
-    <div class="block sns">
-      <div class="inner">
-        <img class="circle" src="/public/images/img_snap01.jpg" alt="" />
-        <img class="circle" src="/public/images/img_snap02.jpg" alt="" />
-        <img class="circle" src="/public/images/img_snap03.jpg" alt="" />
-        <img class="circle" src="/public/images/img_snap04.jpg" alt="" />
-        <img class="circle" src="/public/images/img_snap05.jpg" alt="" />
-        <img class="circle" src="/public/images/img_snap06.jpg" alt="" />
-      </div>
+  <div class="block store">
+    <div class="inner">
+      Urban Blues General Store
+      MIYOSHI, TOKUSHIMA
+
+      店舗情報
+      〇〇県〇〇市〇〇町1-2-345 △△ビル2F
+      (〇〇駅より徒歩5分)
+      TEL:051-123-456
+      営業時間:12:00〜20:00　
+      定休日:不定休
+
+      <img src="/public/images/img_snapMap.svg" alt="">
     </div>
+  </div>
 
-    <div class="block store">
-      <div class="inner"></div>
-    </div>
+  <footer class="footer">
+    <div class="inner"></div>
+  </footer>
 
-    <footer class="footer">
-      <div class="inner"></div>
-    </footer>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script is:inline>
+    const lenis = new Lenis();
 
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
-    ></script>
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script is:inline>
-      const lenis = new Lenis();
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
+    function raf(time) {
+      lenis.raf(time);
       requestAnimationFrame(raf);
+    }
 
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        loop: true,
+    requestAnimationFrame(raf);
 
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      loop: true,
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
-    </script>
-  </body>
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+</body>
+
 </html>
