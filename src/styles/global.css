@@ -301,7 +301,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   color: #333;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   font-size: 1.6rem;
 }
 
@@ -326,15 +326,18 @@ a {
 
 .header {
   width: 100%;
-  height: 9rem;
+  height: 11rem;
   background: #f8f8f8;
   position: -webkit-sticky;
   position: sticky;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 20px;
   top: 0;
   left: 0;
   padding: 1.3rem 4rem 0;
   z-index: 3000;
-  margin: 0.5rem 0 0.5rem;
   /*@at-root .small-header & {
   	height: 9rem;
   	padding: 1.8rem 0 0;
@@ -456,6 +459,15 @@ a {
   right: 0;
   z-index: 100;
 }
+.block.mv .swiper .swiper-slide {
+  height: 640px;
+}
+.block.mv .swiper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover; /* IE: not support */
+  width: 100%;
+  height: 100%;
+}
 .block.news .inner {
   width: 1024px;
   margin: 0 auto;
@@ -551,22 +563,26 @@ a {
   background: #eee;
   transition: 0.3s;
 }
-.block.sns h2 {
+.block.sns {
   width: 100%;
+  padding: 6.4rem 0;
+  position: relative;
+  z-index: 400;
 }
-.block.sns h2 img {
-  width: 283px;
-  display: block;
-  text-align: center;
+.block.sns #slide_snap .circle {
+  width: 40%;
+  height: 60%;
+  -webkit-clip-path: inset(0 0 round 9999px 9999px 9999px 9999px);
+          clip-path: inset(0 0 round 9999px 9999px 9999px 9999px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 .block.sns .inner {
+  width: 100%;
   display: flex;
 }
-.footer__inner {
-  color: red;
-}
-
-.circle {
+.block.sns .inner .circle {
   width: 240px;
   height: 320px;
   -webkit-clip-path: inset(0 0 round 9999px 9999px 9999px 9999px);
@@ -574,6 +590,125 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+}
+.block.sns .sns__tl {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.block.sns .sns__tl img {
+  width: 283px;
+}
+.block.sns .inner {
+  display: flex;
+}
+.block.sns .sns__txt {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  text-align: center;
+  line-height: 3.2rem;
+}
+.block.store {
+  width: 100%;
+  background: #dedede;
+  border-radius: 40px;
+  padding: 32rem 0 12rem;
+  position: relative;
+  z-index: 300;
+  margin-top: -32rem;
+}
+.block.store .store__name {
+  width: 1024px;
+  margin: 0 auto 8rem;
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.block.store .store__name h2 {
+  font-size: 7.7rem;
+  margin-bottom: 0.4rem;
+  text-wrap: nowrap;
+}
+.block.store .store__name .area {
+  font-size: 2rem;
+  text-align: center;
+}
+.block.store .inner {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.block.store .inner .store__info ul {
+  margin-bottom: 1.6rem;
+}
+.block.store .inner .store__info ul .name {
+  font-weight: 600;
+}
+.block.store .inner .store__info ul li {
+  padding-bottom: 0.8rem;
+}
+
+.footer {
+  width: 100%;
+  background: #434343;
+  border-radius: 40px;
+  color: #f8f8f8;
+  padding: 8.8rem 0 7.2rem;
+}
+.footer .inner {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__info .store {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.footer .footer__info .sns ul {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.footer .footer__nav {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+  margin-bottom: 12rem;
+}
+.footer .footer__nav ul li {
+  margin-bottom: 1rem;
+}
+.footer .footer__nav ul li:first-child {
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.footer .footer__nav ul li a:hover {
+  text-decoration: underline;
+}
+.footer .footer__subnav {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__subnav .nav {
+  width: 480px;
+}
+.footer .footer__subnav .nav ul {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__subnav .nav ul a:hover {
+  text-decoration: underline;
+}
+.footer .footer__subnav .copyright {
+  font-size: 1.4rem;
 }
 
 html.lenis,
