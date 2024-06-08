@@ -86,7 +86,7 @@ a {
                 &:hover {
                     opacity: 0.8;
                     transition: 0.3s;
-                    background-color: rgb(211, 211, 211);
+                    background-color: $color-light-gray2;
                 }
             }
         }
@@ -154,16 +154,20 @@ a {
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
                 }
                 .txt {
-                    padding-top: #{(40 / 10)}rem;;
-                    font-size: #{(20 / 10)}rem;
+                    padding-top: #{(32 / 10)}rem;
+                    font-size: #{(16 / 10)}rem;
                 }
                 button {
                     display: block;
-                    margin-top: #{(40 / 10)}rem;;
+                    margin-top: #{(56 / 10)}rem;
                     border-radius: 9999px;
                     border: 1px solid $color-black;
                     font-family: $font-jp-serif;
                     padding: 0.4rem 4rem;
+                    &:hover {
+                        background: $color-light-gray2;
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -188,11 +192,13 @@ a {
             display: flex;
             justify-content: space-between;
             .news__head {
-                width: 284px;
+                width: 260px;
                 border-right: 1px solid $color-black;
                 .tl {
                     font-family: $font-jp-serif;
-                    font-size: 1.5rem;
+                    font-size: 4.4rem;
+                    line-height: 1;
+                    margin-bottom: 2rem;
                 }
                 button {
                     display: block;
@@ -200,6 +206,10 @@ a {
                     border: 1px solid $color-black;
                     font-family: $font-jp-serif;
                     padding: 0.4rem 4rem;
+                    &:hover {
+                        background: $color-light-gray2;
+                        transition: 0.3s;
+                    }
                 }
             }
             .nesw__list {
@@ -208,10 +218,24 @@ a {
                 border-left: 1px solid $color-black;
             }
             li {
-                .date {
-                    padding-left: 2rem;
+                margin-bottom: 2.4rem;
+                &:first-child {
+                    margin-top: 0rem;
                 }
-                .txt {
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+                .date {
+                    padding: 0 2.4rem;
+                }
+                a {
+                    padding: 0.4rem 1rem;
+                    border-radius: 12px;
+                    &:hover {
+                        opacity: 0.8;
+                        transition: 0.3s;
+                        background-color: $color-light-gray2;
+                    }
                 }
             }
         }
@@ -223,6 +247,7 @@ a {
         h2 {
             font-family: $font-jp-serif;
             text-align: center;
+            padding: #{(64 / 10)}rem 0;
         }
         .inner {
             width: 1024px;
@@ -240,6 +265,7 @@ a {
                 }
                 span {
                     text-align: center;
+                    padding: #{(4 / 10)}rem 0 #{(24 / 10)}rem;
                 }
                 button {
                     display: block;
@@ -247,6 +273,10 @@ a {
                     border: 1px solid $color-black;
                     padding: 0.4rem 4rem;
                     font-family: $font-jp-serif;
+                    &:hover {
+                        background: $color-light-gray2;
+                        transition: 0.3s;
+                    }
                 }
             }
         }

@@ -46,7 +46,7 @@ const pageTitle = "UrbanBlues";
         <div class="contents">
           <span class="month">MONTHLY</span>
           <span class="tl">202405 A HOLE ―FOREST―</span>
-          <span class="txt">新しいデニムコレクションを完全受注生産で お届けします。</span>
+          <span class="txt">新しいデニムコレクションを完全受注生産で<br>お届けします。</span>
           <button class="btn__view">MORE</button>
         </div>
       </div>
@@ -56,13 +56,13 @@ const pageTitle = "UrbanBlues";
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="https://portfolio-mori.netlify.app/images/img_mv.jpg" alt="" />
+            <img src="https://portfolio-mori.netlify.app/images/img_mv_slide01.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="https://portfolio-mori.netlify.app/images/test.jpg" alt="" />
+            <img src="https://portfolio-mori.netlify.app/images/img_mv_slide02.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="https://portfolio-mori.netlify.app/images/test.jpg" alt="" />
+            <img src="https://portfolio-mori.netlify.app/images/img_mv_slide03.jpg" alt="" />
           </div>
         </div>
         <!-- If we need pagination -->
@@ -87,15 +87,15 @@ const pageTitle = "UrbanBlues";
       </div>
       <div class="news__list">
         <ul>
-          <li><span class="date">2024年5月31日</span><span class="txt">夏にぴったりの新作登場！鮮やかなブルーが目を引くコレクション 今年の夏、…</span></li>
-          <li><span class="date">2024年5月31日</span><span class="txt">エコフレンドリーなファッション：環境に優しい素材を使った最新ライン 環境…</span>
+          <li><span class="date">2024年5月31日</span><a href="#" class="txt">夏にぴったりの新作登場！鮮やかなブルーが目を引くコレクション 今年の夏、…</a></li>
+          <li><span class="date">2024年5月31日</span><a href="#" class="txt">エコフレンドリーなファッション：環境に優しい素材を使った最新ライン 環境…</a>
           </li>
-          <li><span class="date">2024年5月31日</span><span class="txt">注目のスタイリング提案：ブルーを基調にしたコーディネート術 スタイリング…</span>
+          <li><span class="date">2024年5月31日</span><a href="#" class="txt">注目のスタイリング提案：ブルーを基調にしたコーディネート術 スタイリング…</a>
           </li>
-          <li><span class="date">2024年5月31日</span><span class="txt">セール情報：人気アイテムが最大50%オフ！人気アイテムが期間限定で最大50…</span>
+          <li><span class="date">2024年5月31日</span><a href="#" class="txt">セール情報：人気アイテムが最大50%オフ！人気アイテムが期間限定で最大50…</a>
           </li>
-          <li><span class="date">2024年5月31日</span><span class="txt">お客様の声：Urban Bluesの愛用者インタビュー Urban
-              Bluesを愛用している…</span></li>
+          <li><span class="date">2024年5月31日</span><a href="#" class="txt">お客様の声：Urban Bluesの愛用者インタビュー Urban
+              Bluesを愛用している…</a></li>
         </ul>
       </div>
     </div>
@@ -143,22 +143,47 @@ const pageTitle = "UrbanBlues";
 
   <div class="block store">
     <div class="inner">
-      Urban Blues General Store
-      MIYOSHI, TOKUSHIMA
-
-      店舗情報
-      〇〇県〇〇市〇〇町1-2-345 △△ビル2F
-      (〇〇駅より徒歩5分)
-      TEL:051-123-456
-      営業時間:12:00〜20:00　
-      定休日:不定休
-
-      <img src="/public/images/img_snapMap.svg" alt="">
+      <div class="store__info">
+        Urban Blues General Store
+        MIYOSHI, TOKUSHIMA
+        店舗情報
+        〇〇県〇〇市〇〇町1-2-345 △△ビル2F
+        (〇〇駅より徒歩5分)
+        TEL:051-123-456
+        営業時間:12:00〜20:00
+        定休日:不定休
+      </div>
+      <div class="store__map">
+        <img src="/public/images/img_snapMap.svg" alt="">
+      </div>
     </div>
   </div>
 
   <footer class="footer">
-    <div class="inner"></div>
+    <div class="inner">
+      <div class="footer__info">
+        <div class="store">Urban Blues Online Store</div>
+        <div class="sns"></div>
+      </div>
+      <div class="footer__nav">
+        <ul>
+          <li><a href="#">探す</a></li>
+          <li><a href="#">ブランド</a></li>
+          <li><a href="#">アクティビティ</a></li>
+        </ul>
+        詳しく知る
+        <ul>
+          <li><a href="#">はじめての方へ</a></li>
+          <li><a href="#">ショッピングガイド</a></li>
+          <li><a href="#">ショップリスト</a></li>
+          <li><a href="#">ショップブログ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">企業情報</a></li>
+          <li><a href="#">会社概要</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

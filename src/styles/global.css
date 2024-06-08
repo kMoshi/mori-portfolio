@@ -372,7 +372,7 @@ a {
 .header__gnav li a:hover {
   opacity: 0.8;
   transition: 0.3s;
-  background-color: rgb(211, 211, 211);
+  background-color: #eee;
 }
 .header__subnav {
   position: absolute;
@@ -433,16 +433,20 @@ a {
   mix-blend-mode: overlay; /* オーバーレイを指定 */
 }
 .block.mv .txt .contents .txt {
-  padding-top: 4rem;
-  font-size: 2rem;
+  padding-top: 3.2rem;
+  font-size: 1.6rem;
 }
 .block.mv .txt .contents button {
   display: block;
-  margin-top: 4rem;
+  margin-top: 5.6rem;
   border-radius: 9999px;
   border: 1px solid #333;
   font-family: "Noto Serif JP", serif;
   padding: 0.4rem 4rem;
+}
+.block.mv .txt .contents button:hover {
+  background: #eee;
+  transition: 0.3s;
 }
 .block.mv .swiper {
   position: absolute;
@@ -459,12 +463,14 @@ a {
   justify-content: space-between;
 }
 .block.news .inner .news__head {
-  width: 284px;
+  width: 260px;
   border-right: 1px solid #333;
 }
 .block.news .inner .news__head .tl {
   font-family: "Noto Serif JP", serif;
-  font-size: 1.5rem;
+  font-size: 4.4rem;
+  line-height: 1;
+  margin-bottom: 2rem;
 }
 .block.news .inner .news__head button {
   display: block;
@@ -473,13 +479,35 @@ a {
   font-family: "Noto Serif JP", serif;
   padding: 0.4rem 4rem;
 }
+.block.news .inner .news__head button:hover {
+  background: #eee;
+  transition: 0.3s;
+}
 .block.news .inner .nesw__list {
   width: 740px;
   display: block;
   border-left: 1px solid #333;
 }
+.block.news .inner li {
+  margin-bottom: 2.4rem;
+}
+.block.news .inner li:first-child {
+  margin-top: 0rem;
+}
+.block.news .inner li:last-child {
+  margin-bottom: 0rem;
+}
 .block.news .inner li .date {
-  padding-left: 2rem;
+  padding: 0 2.4rem;
+}
+.block.news .inner li a {
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+}
+.block.news .inner li a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  background-color: #eee;
 }
 .block.items {
   width: 100%;
@@ -489,6 +517,7 @@ a {
 .block.items h2 {
   font-family: "Noto Serif JP", serif;
   text-align: center;
+  padding: 6.4rem 0;
 }
 .block.items .inner {
   width: 1024px;
@@ -509,6 +538,7 @@ a {
 }
 .block.items .inner .item span {
   text-align: center;
+  padding: 0.4rem 0 2.4rem;
 }
 .block.items .inner .item button {
   display: block;
@@ -516,6 +546,10 @@ a {
   border: 1px solid #333;
   padding: 0.4rem 4rem;
   font-family: "Noto Serif JP", serif;
+}
+.block.items .inner .item button:hover {
+  background: #eee;
+  transition: 0.3s;
 }
 .block.sns h2 {
   width: 100%;
