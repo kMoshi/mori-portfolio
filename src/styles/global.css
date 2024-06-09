@@ -750,6 +750,9 @@ a {
 .block.store .inner .store__info ul li {
   padding-bottom: 0.8rem;
 }
+.block.store .inner .store__map {
+  width: 400px;
+}
 
 .footer {
   width: 100%;
