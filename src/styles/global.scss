@@ -51,7 +51,7 @@ a {
     padding: 20px;
     top: 0;
     left: 0;
-    padding: #{(13 / 10)}rem #{(40 / 10)}rem 0;
+    padding: #{(22 / 10)}rem #{(40 / 10)}rem 0;
     z-index: 3000;
     // margin: #{(5 / 10)}rem 0 #{(5 / 10)}rem;
 
@@ -74,7 +74,8 @@ a {
         display: flex;
         margin-left: #{(220 / 10)}rem;
         margin-top: #{(20 / 10)}rem;
-        font-family: $font-jp-serif;
+        font-family: $font-jp-sans;
+        font-weight: 600;
         li {
             display: inline-block;
             list-style: none;
@@ -124,15 +125,17 @@ a {
     padding-bottom: #{(80 / 10)}rem;
     &.mv {
         width: 100%;
-        height: 640px;
+        height: 600px;
         margin: 0 auto;
+        padding-top: #{(24 / 10)}rem;
         padding-bottom: #{(80 / 10)}rem;
         // position: relative;
         .txt {
             width: 100%;
             position: absolute;
             z-index: 200;
-            top: calc(100% / 3);
+            top: 340px;
+            // top: calc(100% / 2);
             .contents {
                 // width: 1024px;
                 margin: 0 auto;
@@ -148,21 +151,21 @@ a {
                 }
                 .tl {
                     // position: absolute;
-                    margin-top: #{(-10 / 10)}rem;
+                    margin-top: #{(-16 / 10)}rem;
                     margin-left: #{(-4 / 10)}rem;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
                     color: $color-black;
-                    font-size: #{(64 / 10)}rem;
+                    font-size: #{(56 / 10)}rem;
                     display: block;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
                 }
-                .txt {
-                    padding-top: #{(32 / 10)}rem;
+                .sub {
+                    padding-bottom: #{(24 / 10)}rem;
                     font-size: #{(16 / 10)}rem;
                 }
                 button {
                     display: block;
-                    margin-top: #{(56 / 10)}rem;
+                    // margin-top: #{(56 / 10)}rem;
                     border-radius: 9999px;
                     border: 1px solid $color-black;
                     font-family: $font-jp-serif;
@@ -176,7 +179,7 @@ a {
         }
         .swiper {
             position: absolute;
-            max-width: 1041px;
+            max-width: 1024px;
             width: 80%;
             height: auto;
             .swiper-slide {

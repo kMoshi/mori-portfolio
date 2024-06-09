@@ -336,7 +336,7 @@ a {
   padding: 20px;
   top: 0;
   left: 0;
-  padding: 1.3rem 4rem 0;
+  padding: 2.2rem 4rem 0;
   z-index: 3000;
   /*@at-root .small-header & {
   	height: 9rem;
@@ -357,7 +357,8 @@ a {
   display: flex;
   margin-left: 22rem;
   margin-top: 2rem;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
 }
 .header__gnav li {
   display: inline-block;
@@ -403,15 +404,16 @@ a {
 }
 .block.mv {
   width: 100%;
-  height: 640px;
+  height: 600px;
   margin: 0 auto;
+  padding-top: 2.4rem;
   padding-bottom: 8rem;
 }
 .block.mv .txt {
   width: 100%;
   position: absolute;
   z-index: 200;
-  top: 33.3333333333%;
+  top: 340px;
 }
 .block.mv .txt .contents {
   margin: 0 auto;
@@ -427,21 +429,20 @@ a {
   display: block;
 }
 .block.mv .txt .contents .tl {
-  margin-top: -1rem;
+  margin-top: -1.6rem;
   margin-left: -0.4rem;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
   color: #333;
-  font-size: 6.4rem;
+  font-size: 5.6rem;
   display: block;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
 }
-.block.mv .txt .contents .txt {
-  padding-top: 3.2rem;
+.block.mv .txt .contents .sub {
+  padding-bottom: 2.4rem;
   font-size: 1.6rem;
 }
 .block.mv .txt .contents button {
   display: block;
-  margin-top: 5.6rem;
   border-radius: 9999px;
   border: 1px solid #333;
   font-family: "Noto Serif JP", serif;
@@ -453,7 +454,7 @@ a {
 }
 .block.mv .swiper {
   position: absolute;
-  max-width: 1041px;
+  max-width: 1024px;
   width: 80%;
   height: auto;
   right: 0;
