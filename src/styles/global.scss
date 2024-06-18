@@ -18,6 +18,10 @@ body {
     color: $color-black;
     background-color: $default-color;
     font-size: #{(16 / 10)}rem;
+    // #content{
+    //     opacity: 0;
+    //     visibility: hidden;
+    // }
 }
 
 img {
@@ -73,25 +77,26 @@ a {
     &__gnav {
         position: absolute;
         display: flex;
-        margin-left: #{(220 / 10)}rem;
+        margin-left: #{(230 / 10)}rem;
         margin-top: #{(16 / 10)}rem;
         font-family: $font-jp-sans;
         font-weight: 600;
         li {
             display: inline-block;
             list-style: none;
-            padding-right: #{(20 / 10)}rem;
+            padding-right: #{(12 / 10)}rem;
             &:last-child {
                 padding-right: 0;
             }
             a {
                 display: block;
-                padding: 0.4rem 1rem;
-                border-radius: 12px;
+                padding: 0.4rem 1.4rem;
+                border-radius: 9999px;
                 &:hover {
                     opacity: 0.8;
                     transition: 0.3s;
-                    background-color: $color-light-gray2;
+                    color: #f8f8f8;
+                    background-color: #333;
                 }
             }
         }
@@ -136,8 +141,8 @@ a {
             position: absolute;
             z-index: 400;
             top: 340px;
-            color: #fff;
-            mix-blend-mode: exclusion;
+            // color: #fff;
+            // mix-blend-mode: exclusion;
             .contents {
                 // width: 1024px;
                 margin: 0 auto;
@@ -159,7 +164,7 @@ a {
                     margin-left: #{(-4 / 10)}rem;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
                     // color: $color-black;
-                    color: #f8f8f8;
+                    // color: #f8f8f8;
                     font-size: #{(56 / 10)}rem;
                     display: block;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
@@ -178,6 +183,8 @@ a {
                     &:hover {
                         background: $color-light-gray2;
                         transition: 0.3s;
+                        background: #333;
+                        color: #f8f8f8;
                     }
                 }
             }
@@ -325,6 +332,8 @@ a {
                     &:hover {
                         background: $color-light-gray2;
                         transition: 0.3s;
+                        background: #333;
+                        color: #f8f8f8;
                     }
                 }
             }
@@ -345,12 +354,13 @@ a {
                     padding: 0 2.4rem;
                 }
                 a {
-                    padding: 0.4rem 1rem;
-                    border-radius: 12px;
+                    padding: 0.4rem 0rem;
+                    // border-radius: 12px;
                     &:hover {
                         opacity: 0.8;
-                        transition: 0.3s;
-                        background-color: $color-light-gray2;
+                        transition: 0.8s;
+                        // background-color: $color-light-gray2;
+                        border-bottom: 1px solid #333;
                     }
                 }
             }
@@ -393,6 +403,8 @@ a {
                     &:hover {
                         background: $color-light-gray2;
                         transition: 0.3s;
+                        background: #333;
+                        color: #f8f8f8;
                     }
                 }
             }

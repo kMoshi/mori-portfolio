@@ -356,7 +356,7 @@ a {
 .header__gnav {
   position: absolute;
   display: flex;
-  margin-left: 22rem;
+  margin-left: 23rem;
   margin-top: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
@@ -364,20 +364,21 @@ a {
 .header__gnav li {
   display: inline-block;
   list-style: none;
-  padding-right: 2rem;
+  padding-right: 1.2rem;
 }
 .header__gnav li:last-child {
   padding-right: 0;
 }
 .header__gnav li a {
   display: block;
-  padding: 0.4rem 1rem;
-  border-radius: 12px;
+  padding: 0.4rem 1.4rem;
+  border-radius: 9999px;
 }
 .header__gnav li a:hover {
   opacity: 0.8;
   transition: 0.3s;
-  background-color: #eee;
+  color: #f8f8f8;
+  background-color: #333;
 }
 .header__subnav {
   position: absolute;
@@ -415,8 +416,6 @@ a {
   position: absolute;
   z-index: 400;
   top: 340px;
-  color: #fff;
-  mix-blend-mode: exclusion;
 }
 .block.mv .txt .contents {
   margin: 0 auto;
@@ -436,7 +435,6 @@ a {
   margin-top: -1.6rem;
   margin-left: -0.4rem;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
-  color: #f8f8f8;
   font-size: 5.6rem;
   display: block;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
@@ -455,6 +453,8 @@ a {
 .block.mv .txt .contents button:hover {
   background: #eee;
   transition: 0.3s;
+  background: #333;
+  color: #f8f8f8;
 }
 .block.mv .swiper {
   position: absolute;
@@ -587,6 +587,8 @@ a {
 .block.news .inner .news__head button:hover {
   background: #eee;
   transition: 0.3s;
+  background: #333;
+  color: #f8f8f8;
 }
 .block.news .inner .nesw__list {
   width: 740px;
@@ -606,13 +608,12 @@ a {
   padding: 0 2.4rem;
 }
 .block.news .inner li a {
-  padding: 0.4rem 1rem;
-  border-radius: 12px;
+  padding: 0.4rem 0rem;
 }
 .block.news .inner li a:hover {
   opacity: 0.8;
-  transition: 0.3s;
-  background-color: #eee;
+  transition: 0.8s;
+  border-bottom: 1px solid #333;
 }
 .block.items {
   width: 100%;
@@ -656,6 +657,8 @@ a {
 .block.items .inner .item button:hover {
   background: #eee;
   transition: 0.3s;
+  background: #333;
+  color: #f8f8f8;
 }
 .block.sns {
   width: 100%;
