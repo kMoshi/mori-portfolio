@@ -504,6 +504,10 @@ a {
   width: 98%;
   margin: 0 auto;
 }
+.block.feature .card03 .swiper-wrapper a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
 .block.feature .card03 .swiper {
   overflow: visible;
 }
@@ -642,6 +646,10 @@ a {
   position: relative;
   border-radius: 4px;
 }
+.block.items .inner .item img:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
 .block.items .inner .item span {
   text-align: center;
   padding: 0.4rem 0 2.4rem;
@@ -684,6 +692,10 @@ a {
      object-fit: cover; /* IE: not support */
   width: 100%;
   height: 100%;
+}
+.block.sns #slide_snap img:hover {
+  opacity: 0.8;
+  transition: 0.5s;
 }
 .block.sns .inner {
   width: 100%;

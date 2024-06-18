@@ -1,163 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 414 280">
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 414 280">
   <defs>
     <style>
       .cls-1 {
-        fill: #555c60;
+        letter-spacing: .1em;
       }
 
-      .cls-1, .cls-2, .cls-3 {
-        stroke-width: 0px;
-      }
-
-      .cls-4 {
-        fill: #f8f8f8;
-        font-size: 24px;
-      }
-
-      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
         isolation: isolate;
       }
 
-      .cls-4, .cls-5, .cls-6, .cls-8, .cls-9 {
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
         font-family: IwaMinPro-Th-83pv-RKSJ-H, 'Iwata Mincho Pro';
       }
 
-      .cls-5 {
-        font-size: 16px;
-      }
-
-      .cls-5, .cls-6, .cls-8, .cls-9 {
+      .cls-1, .cls-3, .cls-4, .cls-6 {
         fill: #000;
       }
 
-      .cls-6, .cls-8, .cls-9 {
+      .cls-1, .cls-4, .cls-6 {
         font-size: 12px;
       }
 
-      .cls-7 {
-        opacity: .2;
-      }
-
-      .cls-7, .cls-11 {
-        fill: none;
-        stroke: #434343;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-8, .cls-9 {
+      .cls-1, .cls-6 {
         glyph-orientation-vertical: 0deg;
         text-orientation: upright;
         writing-mode: tb;
       }
 
-      .cls-9 {
-        letter-spacing: .1em;
+      .cls-8 {
+        fill: #555c60;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-width: 0px;
       }
 
       .cls-2 {
-        fill: #434343;
+        fill: #f8f8f8;
+        font-size: 24px;
       }
 
       .cls-3 {
-        fill: #fff;
+        font-size: 16px;
+      }
+
+      .cls-5 {
+        opacity: .2;
+      }
+
+      .cls-5, .cls-10 {
+        fill: none;
+        stroke: #434343;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        fill: #434343;
       }
     </style>
   </defs>
-  <g id="_レイヤー_1" data-name=" レイヤー 1">
-    <path class="cls-11" d="M326,18.9v240.3"/>
-    <path class="cls-11" d="M167.7,18.9v240.3"/>
-    <path class="cls-11" d="M89.2,18.9v240.3"/>
-    <path class="cls-11" d="M326,175.3h-158.4"/>
-    <path class="cls-11" d="M393.4,164.8h-67.4"/>
-    <path class="cls-11" d="M393.4,226.6h-67.4"/>
-    <path class="cls-11" d="M326,231.2h-158.4"/>
-    <path class="cls-11" d="M393.4,97.6h-225.7"/>
-    <path class="cls-11" d="M393.4,39H21.4"/>
-    <path class="cls-2" d="M243.5,146.4h-28.6v28.6h28.6v-28.6Z"/>
-    <path class="cls-2" d="M183.8,57.8c0,2.9-2.4,5.2-5.3,5.2s-5.2-2.3-5.2-5.2,2.3-5.2,5.2-5.2,5.3,2.4,5.3,5.2Z"/>
-    <path class="cls-2" d="M187.8,53.2v-.5M187.5,63.5v-.2"/>
-    <path class="cls-2" d="M178.8,187c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M178.8,220.5c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M317.4,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M80.6,61.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M80.6,140.6c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M198.9,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-2" d="M259,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
-    <path class="cls-11" d="M167.7,92.4h-78.5"/>
-    <path class="cls-11" d="M167.7,102.9h-78.5"/>
-    <path class="cls-11" d="M167.7,194.8H21.4"/>
-    <path class="cls-11" d="M89.2,87H21.4"/>
-    <path class="cls-11" d="M81.9,223.9v9.6"/>
-    <path class="cls-2" d="M79.5,227.4h.4l2-3.2,2,3.2c0,.1.2.1.4,0,0,0,0-.2,0-.4l-2.3-3.6s0-.1-.2-.1-.2,0-.2.1l-2.3,3.6h0c0,.1,0,.3,0,.3h0Z"/>
-    <path class="cls-11" d="M334,126.5v9.5"/>
-    <path class="cls-2" d="M331.2,130.6h.4l2.5-3.9,2.5,3.9c0,.1.3.2.4,0,.1,0,.2-.3,0-.4l-2.7-4.3s-.1,0-.2,0-.2,0-.2,0l-2.7,4.3v.2s0,.2.1.2h0Z"/>
-    <path class="cls-11" d="M255.2,186.6h-9.5"/>
-    <path class="cls-2" d="M251.1,183.7v.4l3.9,2.5-3.9,2.5c-.1,0-.2.3,0,.4,0,.1.3.2.4,0l4.3-2.7v-.2c.1,0,.1-.2,0-.2l-4.3-2.7h-.2s-.2,0-.2.1h0Z"/>
-    <path class="cls-11" d="M251.2,89.5h-9.5"/>
-    <path class="cls-2" d="M247.1,86.6v.4l3.9,2.5-3.9,2.5c-.1,0-.2.3,0,.4,0,0,.3.2.4,0l4.3-2.7s.1,0,.1-.2,0-.2-.1-.2l-4.3-2.7h-.2s-.2,0-.2,0h0Z"/>
-    <path class="cls-11" d="M246.5,219.9h9.5"/>
-    <path class="cls-2" d="M250.6,222.8v-.4l-3.9-2.5,3.9-2.5c.1,0,.2-.3,0-.4,0-.1-.3-.2-.4,0l-4.3,2.7s-.1.1-.1.2,0,.2.1.2l4.3,2.7h.2s.2,0,.2-.1h0Z"/>
-    <path class="cls-11" d="M175.5,140.8v-9.5"/>
-    <path class="cls-2" d="M178.4,136.7h-.4l-2.5,3.9-2.5-3.9c0-.1-.3-.2-.4,0-.1,0-.2.3,0,.4l2.7,4.3s.1.1.2.1.2,0,.2-.1l2.7-4.3v-.2s0-.2-.1-.2h.1Z"/>
-    <path class="cls-1" d="M232.4,152.7h-1.4c-.2,0-.3.1-.3.3v13.9h-3.1v-13.9c0-.1-.1-.3-.3-.3h-1.4c-.2,0-.3.1-.3.3v14.3c0,.4.1.8.4,1,.3.3.6.4,1,.4h4.1c.4,0,.8-.1,1-.4.3-.3.4-.6.4-1v-14.3c0-.1-.1-.3-.3-.3h.2Z"/>
-    <path class="cls-7" d="M160.7,46h-64.3v39.4h64.3v-39.4Z"/>
-    <path class="cls-7" d="M160.7,18.9v13.1h-64.3v-13.1"/>
-    <path class="cls-7" d="M160.7,109.9h-64.3v77.9h64.3v-77.9Z"/>
-    <path class="cls-7" d="M96.4,259.2v-57.4h64.3v57.4"/>
-    <rect class="cls-2" x="214.9" y="146.4" width="28.6" height="28.6"/>
-    <rect class="cls-3" x="45.8" y="12.3" width="21.2" height="13"/>
-    <rect class="cls-3" x="105.8" y="3.7" width="21.2" height="13"/>
+  <g id="_レイヤー_1-2" data-name=" レイヤー 1">
+    <path class="cls-10" d="M326,18.9v240.3"/>
+    <path class="cls-10" d="M167.7,18.9v240.3"/>
+    <path class="cls-10" d="M89.2,18.9v240.3"/>
+    <path class="cls-10" d="M326,175.3h-158.4"/>
+    <path class="cls-10" d="M393.4,164.8h-67.4"/>
+    <path class="cls-10" d="M393.4,226.6h-67.4"/>
+    <path class="cls-10" d="M326,231.2h-158.4"/>
+    <path class="cls-10" d="M393.4,97.6h-225.7"/>
+    <path class="cls-10" d="M393.4,39H21.4"/>
+    <path class="cls-9" d="M243.5,146.4h-28.6v28.6h28.6v-28.6Z"/>
+    <path class="cls-9" d="M183.8,57.8c0,2.9-2.4,5.2-5.3,5.2s-5.2-2.3-5.2-5.2,2.3-5.2,5.2-5.2,5.3,2.4,5.3,5.2Z"/>
+    <path class="cls-9" d="M187.8,53.2v-.5M187.5,63.5v-.2"/>
+    <path class="cls-9" d="M178.8,187c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M178.8,220.5c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M317.4,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M80.6,61.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M80.6,140.6c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M198.9,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-9" d="M259,162.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2,1-2.2,2.2-2.2,2.2,1,2.2,2.2Z"/>
+    <path class="cls-10" d="M167.7,92.4h-78.5"/>
+    <path class="cls-10" d="M167.7,102.9h-78.5"/>
+    <path class="cls-10" d="M167.7,194.8H21.4"/>
+    <path class="cls-10" d="M89.2,87H21.4"/>
+    <path class="cls-10" d="M81.9,223.9v9.6"/>
+    <path class="cls-9" d="M79.5,227.4h.4l2-3.2,2,3.2c0,.1.2.1.4,0v-.4l-2.3-3.6s0-.1-.2-.1-.2,0-.2.1l-2.3,3.6h0v.3h.2Z"/>
+    <path class="cls-10" d="M334,126.5v9.5"/>
+    <path class="cls-9" d="M331.2,130.6h.4l2.5-3.9,2.5,3.9c0,.1.3.2.4,0,.1,0,.2-.3,0-.4l-2.7-4.3h-.4l-2.7,4.3v.2s0,.2.1.2h0Z"/>
+    <path class="cls-10" d="M255.2,186.6h-9.5"/>
+    <path class="cls-9" d="M251.1,183.7v.4l3.9,2.5-3.9,2.5c-.1,0-.2.3,0,.4,0,.1.3.2.4,0l4.3-2.7v-.2c.1,0,.1-.2,0-.2l-4.3-2.7h-.2s-.2,0-.2.1h0Z"/>
+    <path class="cls-10" d="M251.2,89.5h-9.5"/>
+    <path class="cls-9" d="M247.1,86.6v.4l3.9,2.5-3.9,2.5c-.1,0-.2.3,0,.4,0,0,.3.2.4,0l4.3-2.7s.1,0,.1-.2,0-.2-.1-.2l-4.3-2.7h-.4Z"/>
+    <path class="cls-10" d="M246.5,219.9h9.5"/>
+    <path class="cls-9" d="M250.6,222.8v-.4l-3.9-2.5,3.9-2.5c.1,0,.2-.3,0-.4,0-.1-.3-.2-.4,0l-4.3,2.7s-.1.1-.1.2,0,.2.1.2l4.3,2.7h.2s.2,0,.2-.1h0Z"/>
+    <path class="cls-10" d="M175.5,140.8v-9.5"/>
+    <path class="cls-9" d="M178.4,136.7h-.4l-2.5,3.9-2.5-3.9c0-.1-.3-.2-.4,0-.1,0-.2.3,0,.4l2.7,4.3s.1.1.2.1.2,0,.2-.1l2.7-4.3v-.2s0-.2-.1-.2h.1Z"/>
+    <path class="cls-8" d="M232.4,152.7h-1.4c-.2,0-.3.1-.3.3v13.9h-3.1v-13.9c0-.1-.1-.3-.3-.3h-1.4c-.2,0-.3.1-.3.3v14.3c0,.4.1.8.4,1,.3.3.6.4,1,.4h4.1c.4,0,.8-.1,1-.4.3-.3.4-.6.4-1v-14.3c0-.1-.1-.3-.3-.3h.2Z"/>
+    <path class="cls-5" d="M160.7,46h-64.3v39.4h64.3v-39.4Z"/>
+    <path class="cls-5" d="M160.7,18.9v13.1h-64.3v-13.1"/>
+    <path class="cls-5" d="M160.7,109.9h-64.3v77.9h64.3v-77.9Z"/>
+    <path class="cls-5" d="M96.4,259.2v-57.4h64.3v57.4"/>
+    <rect class="cls-9" x="214.9" y="146.4" width="28.6" height="28.6"/>
   </g>
-  <g id="_レイヤー_2" data-name="レイヤー 2">
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(48.8 65.7)"><tspan x="0" y="0">栄丸</tspan></text>
+  <g id="_レイヤー_2" data-name=" レイヤー 2">
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(48.8 65.7)"><tspan x="0" y="0">栄丸</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(223.6 30.3)"><tspan x="0" y="0">◯◯▲通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(223.6 30.3)"><tspan x="0" y="0">◯◯▲通り</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(19.8 144.4)"><tspan x="0" y="0">Bショップ</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(19.8 144.4)"><tspan x="0" y="0">Bショップ</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(115.7 145.1)"><tspan x="0" y="0">大通</tspan></text>
-      <text class="cls-6" transform="translate(115.7 159.5)"><tspan x="0" y="0">公園</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(115.7 145.1)"><tspan x="0" y="0">大通</tspan></text>
+      </g>
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(115.7 159.5)"><tspan x="0" y="0">公園</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(52.8 274)"><tspan x="0" y="0">至▲▲▲通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(52.8 274)"><tspan x="0" y="0">至▲▲▲通り</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(139.2 12.3)"><tspan x="0" y="0">至◯▲通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(139.2 12.3)"><tspan x="0" y="0">至◯▲通り</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(183.3 224.1)"><tspan x="0" y="0">コンビニ</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(183.3 224.1)"><tspan x="0" y="0">コンビニ</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-6" transform="translate(183.3 191.3)"><tspan x="0" y="0">◯◯銀行</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-4" transform="translate(183.3 191.3)"><tspan x="0" y="0">◯◯銀行</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-4" transform="translate(220 169.9)"><tspan x="0" y="0">U</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-2" transform="translate(220 169.9)"><tspan x="0" y="0">U</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-8" transform="translate(10.4 16.9)"><tspan x="0" y="0">至◯▲通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-6" transform="translate(10.4 16.9)"><tspan x="0" y="0">至◯▲通り</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-9" transform="translate(402.6 4.9)"><tspan x="0" y="0">至◯◯◯通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-1" transform="translate(402.6 4.9)"><tspan x="0" y="0">至◯◯◯通り</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-8" transform="translate(196.6 106.8)"><tspan x="0" y="0">◯珈琲</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-6" transform="translate(196.6 106.8)"><tspan x="0" y="0">◯珈琲</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-8" transform="translate(257 106.8)"><tspan x="0" y="0">▲カメラ</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-6" transform="translate(257 106.8)"><tspan x="0" y="0">▲カメラ</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-8" transform="translate(314.7 107.8)"><tspan x="0" y="0">コンビニ</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-6" transform="translate(314.7 107.8)"><tspan x="0" y="0">コンビニ</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-5" transform="translate(188.2 62.3)"><tspan x="0" y="0">◯◯▲通り駅</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-3" transform="translate(188.2 62.3)"><tspan x="0" y="0">◯◯▲通り駅</tspan></text>
+      </g>
     </g>
-    <g class="cls-10">
-      <text class="cls-8" transform="translate(67 204.1)"><tspan x="0" y="0">◯▲通り</tspan></text>
+    <g class="cls-7">
+      <g class="cls-7">
+        <text class="cls-6" transform="translate(67 204.1)"><tspan x="0" y="0">◯▲通り</tspan></text>
+      </g>
     </g>
   </g>
 </svg>
