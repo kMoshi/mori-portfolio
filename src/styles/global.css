@@ -375,7 +375,6 @@ a {
   border-radius: 9999px;
 }
 .header__gnav li a:hover {
-  opacity: 0.8;
   transition: 0.3s;
   color: #f8f8f8;
   background-color: #333;
