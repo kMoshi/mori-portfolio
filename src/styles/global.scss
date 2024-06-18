@@ -67,13 +67,14 @@ a {
     }
     &__logo {
         position: absolute;
-        margin-top: #{(16 / 10)}rem;
+        width: 200px;
+        margin-top: #{(14 / 10)}rem;
     }
     &__gnav {
         position: absolute;
         display: flex;
         margin-left: #{(220 / 10)}rem;
-        margin-top: #{(20 / 10)}rem;
+        margin-top: #{(16 / 10)}rem;
         font-family: $font-jp-sans;
         font-weight: 600;
         li {
@@ -100,7 +101,7 @@ a {
         display: flex;
         width: 240px;
         justify-content: right;
-        margin-top: #{(24 / 10)}rem;
+        margin-top: #{(20 / 10)}rem;
         right: 0;
         li {
             display: inline-block;
@@ -133,15 +134,18 @@ a {
         .txt {
             width: 100%;
             position: absolute;
-            z-index: 200;
+            z-index: 400;
             top: 340px;
-            // top: calc(100% / 2);
+            color: #fff;
+            mix-blend-mode: exclusion;
             .contents {
                 // width: 1024px;
                 margin: 0 auto;
                 position: absolute;
                 left: 2vw;
-                font-family: $font-jp-serif;
+                font-weight: 600;
+                font-family: "Noto Sans JP", serif;
+                // font-family: $font-jp-serif;
                 span {
                     display: block;
                 }
@@ -154,7 +158,8 @@ a {
                     margin-top: #{(-16 / 10)}rem;
                     margin-left: #{(-4 / 10)}rem;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
-                    color: $color-black;
+                    // color: $color-black;
+                    color: #f8f8f8;
                     font-size: #{(56 / 10)}rem;
                     display: block;
                     mix-blend-mode: overlay; /* オーバーレイを指定 */
@@ -182,6 +187,8 @@ a {
             max-width: 1024px;
             width: 80%;
             height: auto;
+            right: 0;
+            z-index: 300;
             .swiper-slide {
                 height: 640px;
                 -webkit-backface-visibility: hidden;
@@ -299,9 +306,9 @@ a {
             width: 1024px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             .news__head {
-                width: 260px;
+                width: 240px;
                 border-right: 1px solid $color-black;
                 .tl {
                     font-family: $font-jp-serif;
@@ -462,8 +469,9 @@ a {
             justify-items: center;
             h2 {
                 font-size: #{(77 / 10)}rem;
-                margin-bottom: #{(4 / 10)}rem;
+                margin-bottom: #{(14 / 10)}rem;
                 text-wrap: nowrap;
+                width: 100%;
             }
             .area {
                 font-size: #{(20 / 10)}rem;

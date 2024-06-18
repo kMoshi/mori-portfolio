@@ -350,13 +350,14 @@ a {
 }
 .header__logo {
   position: absolute;
-  margin-top: 1.6rem;
+  width: 200px;
+  margin-top: 1.4rem;
 }
 .header__gnav {
   position: absolute;
   display: flex;
   margin-left: 22rem;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
 }
@@ -383,7 +384,7 @@ a {
   display: flex;
   width: 240px;
   justify-content: right;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
   right: 0;
 }
 .header__subnav li {
@@ -412,14 +413,17 @@ a {
 .block.mv .txt {
   width: 100%;
   position: absolute;
-  z-index: 200;
+  z-index: 400;
   top: 340px;
+  color: #fff;
+  mix-blend-mode: exclusion;
 }
 .block.mv .txt .contents {
   margin: 0 auto;
   position: absolute;
   left: 2vw;
-  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-family: "Noto Sans JP", serif;
 }
 .block.mv .txt .contents span {
   display: block;
@@ -432,7 +436,7 @@ a {
   margin-top: -1.6rem;
   margin-left: -0.4rem;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
-  color: #333;
+  color: #f8f8f8;
   font-size: 5.6rem;
   display: block;
   mix-blend-mode: overlay; /* オーバーレイを指定 */
@@ -457,6 +461,8 @@ a {
   max-width: 1024px;
   width: 80%;
   height: auto;
+  right: 0;
+  z-index: 300;
   right: 0;
   z-index: 100;
 }
@@ -560,10 +566,9 @@ a {
   width: 1024px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 .block.news .inner .news__head {
-  width: 260px;
+  width: 240px;
   border-right: 1px solid #333;
 }
 .block.news .inner .news__head .tl {
@@ -728,8 +733,9 @@ a {
 }
 .block.store .store__name h2 {
   font-size: 7.7rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.4rem;
   text-wrap: nowrap;
+  width: 100%;
 }
 .block.store .store__name .area {
   font-size: 2rem;
