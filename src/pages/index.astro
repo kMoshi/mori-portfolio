@@ -377,118 +377,116 @@ const pageTitle = "UrbanBlues";
   <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script is:inline>
-    window.addEventListener('load', function () {
-      const lenis = new Lenis();
+    const lenis = new Lenis();
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
+    function raf(time) {
+      lenis.raf(time);
       requestAnimationFrame(raf);
+    }
 
-      const swiper01 = new Swiper(".swiper01", {
-        effect: "fade", // フェードモードにする（デフォルトは 'slide'）
-        fadeEffect: {
-          crossFade: true, // クロスフェードを有効にする（フェードモードの場合 true 推奨）
+    requestAnimationFrame(raf);
+
+    const swiper01 = new Swiper(".swiper01", {
+      effect: "fade", // フェードモードにする（デフォルトは 'slide'）
+      fadeEffect: {
+        crossFade: true, // クロスフェードを有効にする（フェードモードの場合 true 推奨）
+      },
+      allowTouchMove: false,
+      slidesPerView: 1, // コンテナ内に表示させるスライド数（CSSでサイズ指定する場合は 'auto'）
+      spaceBetween: 0, // スライド間の余白（px）
+      centeredSlides: true, // アクティブなスライドを中央に配置する
+
+      loop: true, // 無限ループさせる
+
+      speed: 500, // スライドアニメーションのスピード（ミリ秒）
+
+      autoplay: {
+        // 自動再生させる
+        delay: 6000, // 次のスライドに切り替わるまでの時間（ミリ秒）
+        disableOnInteraction: false, // ユーザーが操作しても自動再生を止めない
+        waitForTransition: false, // アニメーションの間も自動再生を止めない（最初のスライドの表示時間を揃えたいときに）
+      },
+      preloadImages: false,
+      lazy: {
+        loadPrevNext: true,
+      },
+      watchSlidesProgress: true, // スライドの進行状況を監視する
+
+      pagination: {
+        el: ".swiper-pagination", // ページネーション要素のクラス
+        clickable: true, // クリックによるスライド切り替えを有効にする
+        type: "bullets", // 'bullets'（デフォルト） | 'fraction' | 'progressbar'
+      },
+    });
+
+    const card = new Swiper(".card03 .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      grabCursor: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".card03 .swiper-button-next",
+        prevEl: ".card03 .swiper-button-prev",
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
         },
-        allowTouchMove: false,
-        slidesPerView: 1, // コンテナ内に表示させるスライド数（CSSでサイズ指定する場合は 'auto'）
-        spaceBetween: 0, // スライド間の余白（px）
-        centeredSlides: true, // アクティブなスライドを中央に配置する
-
-        loop: true, // 無限ループさせる
-
-        speed: 500, // スライドアニメーションのスピード（ミリ秒）
-
-        autoplay: {
-          // 自動再生させる
-          delay: 6000, // 次のスライドに切り替わるまでの時間（ミリ秒）
-          disableOnInteraction: false, // ユーザーが操作しても自動再生を止めない
-          waitForTransition: false, // アニメーションの間も自動再生を止めない（最初のスライドの表示時間を揃えたいときに）
+        1025: {
+          slidesPerView: 5,
+          spaceBetween: 32,
         },
-        preloadImages: false,
-        lazy: {
-          loadPrevNext: true,
-        },
-        watchSlidesProgress: true, // スライドの進行状況を監視する
+      },
+    });
 
-        pagination: {
-          el: ".swiper-pagination", // ページネーション要素のクラス
-          clickable: true, // クリックによるスライド切り替えを有効にする
-          type: "bullets", // 'bullets'（デフォルト） | 'fraction' | 'progressbar'
+    const swiper03 = new Swiper(".swiper03", {
+      slidesPerView: 5, //画像を何枚表示するか
+      spaceBetween: 10, //何ピクセル画像の間隔をあけるか
+      centeredSlides: true, //見切らせたい場合メイン画像をセンターにもってくるか
+      //自動再生する場合
+      autoplay: {
+        delay: 3000, //3秒後に次の画像に代わる
+      },
+      loop: true, //最後の画像までいったらループする
+      //ページネーションをつける場合
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".news, .items h2, .items .inner,.sns__tl, #slide_snap, .sns__txt, .store__name, .store .inner").forEach(target => {
+      gsap.from(target, {
+        scrollTrigger: {
+          trigger: target,
+          start: 'top 75%',
+          toggleActions: 'play none none reverse',
         },
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
       });
+    });
+    const animations = [
+      { selector: ".header", props: { y: -30 }, delay: 0.4 },
+      { selector: ".mv__slide .txt", props: { x: -30 }, delay: 0.8 },
+      { selector: ".swiper01", props: { x: 0 }, delay: 1.2 },
+      { selector: ".feature", props: { x: 0 }, delay: 1.8 },
+    ];
 
-      const card = new Swiper(".card03 .swiper", {
-        slidesPerView: 1,
-        spaceBetween: 16,
-        loop: true,
-        loopAdditionalSlides: 1,
-        speed: 1000,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        grabCursor: true,
-        watchSlidesProgress: true,
-        navigation: {
-          nextEl: ".card03 .swiper-button-next",
-          prevEl: ".card03 .swiper-button-prev",
-        },
-        breakpoints: {
-          600: {
-            slidesPerView: 2,
-          },
-          1025: {
-            slidesPerView: 5,
-            spaceBetween: 32,
-          },
-        },
-      });
-
-      const swiper03 = new Swiper(".swiper03", {
-        slidesPerView: 5, //画像を何枚表示するか
-        spaceBetween: 10, //何ピクセル画像の間隔をあけるか
-        centeredSlides: true, //見切らせたい場合メイン画像をセンターにもってくるか
-        //自動再生する場合
-        autoplay: {
-          delay: 3000, //3秒後に次の画像に代わる
-        },
-        loop: true, //最後の画像までいったらループする
-        //ページネーションをつける場合
-      });
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.utils.toArray(".news, .items h2, .items .inner,.sns__tl, #slide_snap, .sns__txt, .store__name, .store .inner").forEach(target => {
+    animations.forEach(animation => {
+      gsap.utils.toArray(animation.selector).forEach(target => {
         gsap.from(target, {
-          scrollTrigger: {
-            trigger: target,
-            start: 'top 75%',
-            toggleActions: 'play none none reverse',
-          },
-          y: 30,
+          stagger: { each: 0.1224 },
+          ...animation.props,
           opacity: 0,
+          delay: animation.delay,
           duration: 0.6,
-        });
-      });
-      const animations = [
-        { selector: ".header", props: { y: -30 }, delay: 0.4 },
-        { selector: ".mv__slide .txt", props: { x: -30 }, delay: 0.8 },
-        { selector: ".swiper01", props: { x: 0 }, delay: 1.2 },
-        { selector: ".feature", props: { x: 0 }, delay: 1.8 },
-      ];
-
-      animations.forEach(animation => {
-        gsap.utils.toArray(animation.selector).forEach(target => {
-          gsap.from(target, {
-            stagger: { each: 0.1224 },
-            ...animation.props,
-            opacity: 0,
-            delay: animation.delay,
-            duration: 0.6,
-          });
         });
       });
     });
