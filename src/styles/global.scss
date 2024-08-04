@@ -29,6 +29,9 @@ body {
 
 img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }
 
 img[src$=".svg"] {
@@ -46,6 +49,14 @@ a {
     text-decoration: none;
 }
 
+.mv{
+    width: 100%;
+    img{
+        height: 580px;
+        object-fit: cover;
+    }
+}
+
 // header
 .header {
     width: 100%;
@@ -53,7 +64,7 @@ a {
     height: #{(90 / 10)}rem;
     background: $color-white;
     position: sticky;
-    background: rgba(255, 255, 255, 0.8);
+    // background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     padding: 20px;
     top: 0;

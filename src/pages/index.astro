@@ -11,7 +11,6 @@ const pageTitle = "UrbanBlues";
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="target-densitydpi=device-dpi, width=1060px, maximum-scale=1.0, user-scalable=yes">
   <meta name="generator" content={Astro.generator} />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>{pageTitle}</title>
 </head>
 
@@ -43,15 +42,12 @@ const pageTitle = "UrbanBlues";
       </div>
       <div class="about__txt">
         <p>徳島県出身</p>
-
         <p>
           専門学校卒業後、印刷会社でDTPオペレーター、Web制作会社で
           Webデザイナーとして勤めたのちにフリーランスのWebデザイナー
           Webディレクターと して活動
         </p>
-
         <p>現在は企業内のWebデザイナーとして従事。</p>
-
       </div>
     </div>
     <div class="about__skills">
@@ -161,7 +157,7 @@ const pageTitle = "UrbanBlues";
     </div>
     <div class="works__inner">
       <a href="https://portfolio-mori.netlify.app/sample/food-pc.jpg" target="_blank"><img
-          src="https://portfolio-mori.netlify.app/images/global/img-works14.jpg" alt=""></a>
+          src="https://portfolio-mori.netlify.app/images/global/img-works13.jpg" alt=""></a>
       <em>デザインサンプル（寿司店）</em>
       <p><a href="https://portfolio-mori.netlify.app/sample/food-pc.jpg" target="_blank">【PC】</a><br><a
           href="https://portfolio-mori.netlify.app/sample/food-sp.jpg" target="_blank">【SP】</a></p>
@@ -209,39 +205,6 @@ const pageTitle = "UrbanBlues";
     }
 
     requestAnimationFrame(raf);
-
-    // gsap.registerPlugin(ScrollTrigger);
-
-    // gsap.utils.toArray(".about, .works, .contact").forEach(target => {
-    //   gsap.from(target, {
-    //     scrollTrigger: {
-    //       trigger: target,
-    //       start: 'top 75%',
-    //       toggleActions: 'play none none reverse',
-    //     },
-    //     y: 30,
-    //     opacity: 0,
-    //     duration: 0.6,
-    //   });
-    // });
-    // const animations = [
-    //   { selector: ".header", props: { y: -30 }, delay: 0.4 },
-    //   { selector: ".mv__slide .txt", props: { x: -30 }, delay: 0.8 },
-    //   { selector: ".swiper01", props: { x: 0 }, delay: 1.2 },
-    //   { selector: ".feature", props: { x: 0 }, delay: 1.8 },
-    // ];
-
-    // animations.forEach(animation => {
-    //   gsap.utils.toArray(animation.selector).forEach(target => {
-    //     gsap.from(target, {
-    //       stagger: { each: 0.1224 },
-    //       ...animation.props,
-    //       opacity: 0,
-    //       delay: animation.delay,
-    //       duration: 0.6,
-    //     });
-    //   });
-    // });
 
     const h = document.getElementsByClassName('header')[0];
     gsap.utils.toArray('a[href^="#"]').forEach(function (a) {
