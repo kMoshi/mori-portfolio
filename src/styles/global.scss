@@ -87,6 +87,7 @@ a {
         position: absolute;
         width: 200px;
         margin-top: -#{(16 / 10)}rem;
+        margin-left: -#{(4 / 10)}rem;
     }
     &__gnav {
         display: flex;
@@ -152,18 +153,18 @@ a {
             display: flex;
             flex-direction: column;
             img {
-                height: 64px;
+                height: 40px;
             }
-            .ttl {
+            .skills__ttl {
                 text-align: center;
                 em {
-                    font-size: 2.4rem;
+                    font-size: 2rem;
                     font-style: normal;
                     font-weight: 600;
                     display: block;
                 }
                 span {
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                 }
                 margin-bottom: 24px;
             }
@@ -211,7 +212,9 @@ a {
         }
         p {
             font-size: 1.4rem;
-            line-height: 1;
+            line-height: 1.2;
+            display: inline-block;
+            margin-top: 8px;
             a{
                 margin-bottom: 0px !important;
             }

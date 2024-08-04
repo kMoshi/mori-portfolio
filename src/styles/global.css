@@ -366,6 +366,7 @@ a {
   position: absolute;
   width: 200px;
   margin-top: -1.6rem;
+  margin-left: -0.4rem;
 }
 .header__gnav {
   display: flex;
@@ -432,20 +433,20 @@ a {
   flex-direction: column;
 }
 .about .about__skills .inner img {
-  height: 64px;
+  height: 40px;
 }
-.about .about__skills .inner .ttl {
+.about .about__skills .inner .skills__ttl {
   text-align: center;
   margin-bottom: 24px;
 }
-.about .about__skills .inner .ttl em {
-  font-size: 2.4rem;
+.about .about__skills .inner .skills__ttl em {
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   display: block;
 }
-.about .about__skills .inner .ttl span {
-  font-size: 1.8rem;
+.about .about__skills .inner .skills__ttl span {
+  font-size: 1.4rem;
 }
 .about .about__skills .inner p {
   line-height: 1.6;
@@ -490,7 +491,9 @@ a {
 }
 .works .works__inner p {
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.2;
+  display: inline-block;
+  margin-top: 8px;
 }
 .works .works__inner p a {
   margin-bottom: 0px !important;
