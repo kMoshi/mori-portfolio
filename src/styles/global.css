@@ -303,6 +303,9 @@ body {
   color: #333;
   background-color: #F8F8F8;
   font-size: 1.6rem;
+  font-feature-settings: "palt";
+  /* 文字が詰まりすぎるのを緩和するためにletter-spacingを設定 */
+  letter-spacing: 0.05em;
 }
 
 img {
@@ -326,7 +329,7 @@ a {
 
 .header {
   width: 100%;
-  height: 11rem;
+  height: 9rem;
   background: #f8f8f8;
   position: -webkit-sticky;
   position: sticky;
@@ -351,53 +354,154 @@ a {
 .header__logo {
   position: absolute;
   width: 200px;
-  margin-top: 1.4rem;
+  margin-top: -1.6rem;
 }
 .header__gnav {
-  position: absolute;
   display: flex;
-  margin-left: 23rem;
-  margin-top: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
+  justify-content: right;
+}
+.header__gnav ul {
+  display: flex;
+  gap: 24px;
 }
 .header__gnav li {
-  display: inline-block;
   list-style: none;
   padding-right: 1.2rem;
+  margin-top: 0.8rem;
 }
 .header__gnav li:last-child {
   padding-right: 0;
 }
 .header__gnav li a {
-  display: block;
-  padding: 0.4rem 1.4rem;
-  border-radius: 9999px;
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
 }
 .header__gnav li a:hover {
-  transition: 0.3s;
-  color: #f8f8f8;
-  background-color: #333;
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
 }
-.header__subnav {
-  position: absolute;
+
+.mv {
+  margin-bottom: 120px;
+}
+
+.about {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.about .about__me {
   display: flex;
-  width: 240px;
-  justify-content: right;
-  margin-top: 2rem;
-  right: 0;
+  gap: 56px;
 }
-.header__subnav li {
-  display: inline-block;
-  list-style: none;
-  padding-left: 2rem;
+.about .about__me .about__img {
+  width: 50%;
 }
-.header__subnav img {
-  width: 24px;
+.about .about__me .about__txt {
+  width: 50%;
+  align-self: center;
+  line-height: 1.6;
 }
-.header__subnav img:hover {
-  opacity: 0.8;
+.about .about__me .about__txt p {
+  margin-bottom: 24px;
+}
+.about .about__skills {
+  display: flex;
+  gap: 56px;
+  margin-top: 56px;
+}
+.about .about__skills .inner {
+  display: flex;
+  flex-direction: column;
+}
+.about .about__skills .inner img {
+  height: 64px;
+}
+.about .about__skills .inner .ttl {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.about .about__skills .inner .ttl em {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+}
+.about .about__skills .inner .ttl span {
+  font-size: 1.8rem;
+}
+.about .about__skills .inner p {
+  line-height: 1.6;
+}
+
+.ttl {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.works {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+.works .works__inner {
+  width: 320px;
+  margin-bottom: 40px;
+}
+.works .works__inner img {
+  width: 320px;
+}
+.works .works__inner a {
+  display: block;
+  margin-bottom: 24px;
+}
+.works .works__inner a:hover {
+  opacity: 0.6;
   transition: 0.3s;
+}
+.works .works__inner em {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.works .works__inner p {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.works .works__inner p a {
+  margin-bottom: 0px !important;
+}
+
+.contact {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.contact span {
+  display: block;
+  position: relative;
+  margin-left: 16px;
+}
+.contact span:before {
+  content: url("https://portfolio-mori.netlify.app/images/global/icon _email.svg");
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  margin-left: -28px;
+  margin-top: 2px;
 }
 
 .footer {
@@ -412,51 +516,34 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.footer .footer__info .store {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2.4rem;
-}
-.footer .footer__info .sns ul {
+.footer .inner ul {
   display: flex;
-  width: 100px;
-  justify-content: space-between;
+  gap: 24px;
 }
-.footer .footer__nav {
-  display: flex;
-  width: 420px;
-  justify-content: space-between;
-  margin-bottom: 12rem;
-}
-.footer .footer__nav ul li {
-  margin-bottom: 1rem;
-}
-.footer .footer__nav ul li:first-child {
-  font-weight: 600;
-  margin-bottom: 1.6rem;
-}
-.footer .footer__nav ul li a:hover {
-  text-decoration: underline;
-}
-.footer .footer__subnav {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.footer .footer__subnav .nav {
-  width: 480px;
-}
-.footer .footer__subnav .nav ul {
+.footer .inner ul li {
+  list-style: none;
+  padding-right: 1.2rem;
   font-size: 1.4rem;
-  display: flex;
-  justify-content: space-between;
+  font-weight: 600;
 }
-.footer .footer__subnav .nav ul a:hover {
-  text-decoration: underline;
+.footer .inner ul li:last-child {
+  padding-right: 0;
 }
-.footer .footer__subnav .copyright {
-  font-size: 1.4rem;
+.footer .inner ul li a {
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+.footer .inner ul li a:hover {
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+.footer .inner small {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 html.lenis,
